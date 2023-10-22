@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <title>My Seventh Web Page.</title>
+ 
+  <Style>
+    body {Width: 100%}
+    
+  #container {
+    width: 70%;
+    text-aling: left; 
+    margin: 0px auto;
+  }
+    #photo {
+      background-color: #eefeee;
+      margin-left: auto;
+      margin-right: 0;
+      float: right;
+      width: 200px; 
+    }
+    
+    #myphoto {
+      height: auto;
+      width: 150px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      padding: 5px;
+      display: block;
+      margin: auto; 
+    }
+    
+    .caption {
+      font-size: 10px;
+      font-family: times;
+      text-align: center; 
+    }
+    
+    p, td, li {
+      font-size: 10px;
+      font-family: times;
+    }
+
+      h1, h2, h3, h4, h5, h6 {
+      font-family: times;
+      background-color: #fefeee;
+    }
+    
+    a { text-decoration: none; }
+    a:visited { background-color: #feeeee; }
+    a:link {background-color: #eeeefe; }
+    a:hover { background-color: #fefeee; }
+
+    #thingsilove {
+      background-color: #fefddd; 
+    }
+
+    #birds {
+      font-family: Arial;
+      border-collapse: collapse;
+      width: 100%
+    }
+    
+    #birds th, #birds td {
+      border: 1px solid #ddd
+      padding: 8px;
+    }
+    
+    #birds th {
+      font: black bold times;
+      background-color: #04aa6d;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: white;
+    }
+
+    #birds tr:nth-child(even) {background-color:#f2f2f2; }
+
+    #classes { background-color: #eeeefe; }
+    
+    </Style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+      // This is where i put my java script
+
+      // Do this when i click the clicktoreveal1 button
+      $("clicktoreveal1").click(function() {
+        // run this when i click on this button
+        $("clicktoreveal1").html("Northern Shoveler");
+      });
+
+         // Do this when i click the clicktoreveal2 button
+      $("clicktoreveal2").click(function() {
+        // run this when i click on this button
+        $("clicktoreveal2").html("Western Tanager");
+        });
+
+         // Do this when i click the clicktoreveal3 button
+      $("clicktoreveal3").click(function() {
+        // run this when i click on this button
+        $("clicktoreveal3").html("Bald Eagle");
+        });
+        
+    </script>
+    </head>
+    <body>
+    <div id="container">
+    
+  <h1>My Seventh Web Page for Web Mapping</h1>
+    
+    <p>This is the sixth lab for my Web Mapping course at MSU Denver</p>
+  
+    
+    <h2> About Me</h2>
+    
+  <div id="photo">
+           <img id="myphoto" src="DSCN0906.JPG" />
+           <p class= "caption">Large-footed Finch: Captured in The Delta Cloud Forest of Costa Rica </p> 
+           <p class= "caption"> Photo by Drew Bender</p>
+           I am a student <a href="https://www.msudenver.edu">MSU Denver. </a> 
+    </a>
+    </div>
+   
+    <div id="thingsilove">
+    <p>Here are the three things I love the most:</p>
+    <ol>
+       <li> My Pets</li>
+       <li>My Girl Friend</li>
+       <li>Birds</li>
+     </ol>
+    </div>
+
+    <div id="classes">
+    <p>As a senior who is in my last semester at MSU Denver, these are the last credits I am taking for my undergraduate degree:</p>
+      <ul>
+        <li>Web Mapping</li>
+        <li>Vascular Plant Taxonomy</li>
+        <li>Wetlands</li>
+        <li>Undergraduate Research Credit</li>
+        </ul>
+    </div>
+
+    <h3>My Favorite Birds in Colorado</h3>
+    <table id="birds">
+    <tr>
+      <th>Name of Bird</th>
+      <th>Type of Bird</th>
+      <th>When You Can Find Them</th>
+    </tr>
+    <tr>
+      <td><button id="clicktoreveal1">Click to reveal...</button></td>
+      <td>Waterfowl (Duck)</td>
+      <td>Late Fall - Early Spring</td>
+    </tr>
+    <tr>
+      <td><button id="clicktoreveal2">Click to reveal...</button></td>
+      <td>Passerine (Songbird)</td>
+      <td>Late Sping - Late Summer</td>
+    </tr>
+    <tr>
+      <td><button id="clicktoreveal3">Click to reveal...</button></td>
+      <td>Raptor</td>
+      <td>Year Round</td>
+    </tr>
+    </table>
+    </div>
+    
+  </body>
+  </html>
