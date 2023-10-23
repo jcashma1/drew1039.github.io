@@ -89,7 +89,7 @@
       $("#clicktoreveal1").click(function() {
         // run this when i click on this button
         console.log("clicked on the first button.");
-        $("div_ctr1").html("Northern Shoveler");
+        $("#div_ctr1").html("Northern Shoveler");
       });
 
          // Do this when i click the clicktoreveal2 button
@@ -107,6 +107,13 @@
         });
 
       });
+
+      // Toggle the photo on/off
+        $("#togglephoto").click(function() {
+          console.log("toggle the photo");
+          $("#myphoto).fadeToggle();
+          
+        });
         
     </script>
     </head>
@@ -125,6 +132,7 @@
            <p class= "caption">Large-footed Finch: Captured in The Delta Cloud Forest of Costa Rica </p> 
            <p class= "caption"> Photo by Drew Bender</p>
            I am a student <a href="https://www.msudenver.edu">MSU Denver. </a> 
+        <button id="togglephoto">Toggle the photo on/off </button>
     </a>
     </div>
    
