@@ -82,23 +82,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script> 
       // This is where i put my java script
+      console.log("started javascript");
 
       // Do this when i click the clicktoreveal1 button
-      $("clicktoreveal1").click(function() {
+      $("#clicktoreveal1").click(function() {
         // run this when i click on this button
-        $("clicktoreveal1").html("Northern Shoveler");
+        console.log("clicked on the first button.");
+        $("#clicktoreveal1").html("Northern Shoveler");
       });
 
          // Do this when i click the clicktoreveal2 button
-      $("clicktoreveal2").click(function() {
+      $("#clicktoreveal2").click(function() {
         // run this when i click on this button
-        $("clicktoreveal2").html("Western Tanager");
+        console.log("clicked on the second button.");
+        $("#clicktoreveal2").html("Western Tanager");
         });
 
          // Do this when i click the clicktoreveal3 button
-      $("clicktoreveal3").click(function() {
+      $("#clicktoreveal3").click(function() {
         // run this when i click on this button
-        $("clicktoreveal3").html("Bald Eagle");
+        console.log("clicked on the third button.");
+        $("#clicktoreveal3").html("Bald Eagle");
         });
         
     </script>
