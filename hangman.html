@@ -18,8 +18,8 @@
     <script>
          $(document).ready( function() {
               // this is the secret word!
-              word =  "y o u r w o r d";
-              blank = "- - - - - - - -";
+              word =  "o u j i a";
+              blank = "- - - - -";
               $("#word").text(blank);
 
               // this is the list of letters that have been tried
@@ -42,7 +42,7 @@
                     $("#info").text("");
                 
                     // use text to get the letter that was clicked on
-                    letter= $(this).text();
+                    letter = $(this).text();
                     console.log("clicked on ", letter);
                     
 
@@ -59,11 +59,11 @@
                     } else if (! word.includes(letter)) {
 
                       // reduce the number of remaining tries by 1
-                      tried = tries - 1
+                      tries = tries - 1
                       $("#guesses").text("Guesses left: "+tries);
                       
                       // are they out of tries? then they lost!
-                      if (tries <1) {
+                      if (tries < 1) {
                         gameLost = true;
                         $("#info").text("Sorry you are out of guesses, YOU LOOSE!");
                       }
