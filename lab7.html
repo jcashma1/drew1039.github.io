@@ -21,22 +21,23 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
 <script>
-  var map = L.map('map').setView([39.739395, -105.003891], 7);
+  var map = L.map('map').setView([39.739395, -105.003891], 15);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 25,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-  var marker = L.marker([39.743825, -105.001445]).addTo(map);
-  var circle = L.circle([39.744167, -105.00638], {
+  var marker = L.marker([39.743212, -105.005929]).addTo(map);
+  var circle = L.circle([39.743212, -105.005929], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
-    radius: 10
+    radius: 400
 }).addTo(map);
   var polygon = L.polygon([
-    [39.739395, -105.003891],
-    [39.739395, -105.003891],
-    [39.739395, -105.003891],
+    [39.743347, -105.011061],
+    [39.743654, -105.010339],
+    [39.742935, -105.009773],
+    [39.742607, -105.010503]
     
 ]).addTo(map);
   marker.bindPopup("<b>Science Building</b><br>Auraria Campus.").openPopup();
