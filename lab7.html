@@ -31,19 +31,20 @@
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
-    radius: 400
+    radius: 10
 }).addTo(map);
   var polygon = L.polygon([
     [39.739395, -105.003891],
     [39.739395, -105.003891],
-    [39.739395, -105.003891]
+    [39.739395, -105.003891],
+    
 ]).addTo(map);
   marker.bindPopup("<b>Science Building</b><br>Auraria Campus.").openPopup();
 circle.bindPopup("Auraria Campus.");
 polygon.bindPopup("5th Street Parking Garage.");
   var popup = L.popup()
-    .setLatLng([39.739395, -105.003891])
-    .setContent("I am a standalone popup.")
+    .setLatLng([39.741617, -105.012876])
+    .setContent("Auraria Light-Rail Station.")
     .openOn(map);
   function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
