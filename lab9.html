@@ -72,13 +72,13 @@
     
     // function to satyle my chloropath map
     function style1(feature) {
-	    d = feature.properties.PCT_POVERTY;
-	    answer = d > 30 ? '#800026' :
-		     d > 20 ? '#DB0026' :
-		     d > 15 ? '#E31A1C' :
-		     d > 10 ? '#FC4E2A' :
-		     d > 5  ? '#FD8D3C' :
-		     d > 3  ? '#FEB24C' :
+	    d = feature.properties.PCT_ASIAN;
+	    answer = d > 20 ? '#800026' :
+		     d > 15 ? '#DB0026' :
+		     d > 10 ? '#E31A1C' :
+		     d > 8 ? '#FC4E2A' :
+		     d > 6  ? '#FD8D3C' :
+		     d > 4  ? '#FEB24C' :
 		     d > 1  ? '#FED976' :
 		    	      '#FFEDA0' ;
 	    styleReturn = { 
@@ -99,8 +99,8 @@
 			// convert the file (data) into a layer
 			acsDenver2021Layer = L.geoJSON(data, { style : style1,
 			onEachFeature : function(feature, layer) {
-				layer.bindPopup("Percent Poverty: " + 
-feature.properties.PCT_POVERTY + "%");
+				layer.bindPopup("Percent Asian: " + 
+feature.properties.PCT_ASIAN + "%");
 				}
 			}).addTo(map);
 
