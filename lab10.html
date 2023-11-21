@@ -141,7 +141,7 @@ feature.properties.PCT_ASIAN + "%");
         var div = L.DomUtil.create('div', 'info legend');
         colors = ['#FFEDA0','#FED976','#FEB24C','#FD8D3C','#FC4E2A','#E31A1C','#BD0026','#800026'];
         lables =['0 - 1%', '1 - 4%', '4 - 6%','6 - 8%', '8 - 10%', '10 - 15%', '15 - 20%','20%+'];
-        div.innnerHTML = '<h2>% Asian</h2><br>';
+        div.innerHTML = '<h2>% Asian</h2><br>';
         for (var i = 0; i < colors.length; i++) {
           div.innerHTML += '<i style="background:' + colors[i] + '"></i> ' + lables[i] + '<br>';
       
